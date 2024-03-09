@@ -1,0 +1,639 @@
+@charset "UTF-8";
+
+/* mobile first */
+
+@font-face {
+    font-family: 'sail';
+    src: url(fontes/Sail.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'weather';
+    src: url(../fontes/Weather\ Sunday\ -\ Personal\ Use.otf) format('opentype');
+}
+
+
+:root{
+    --cor0:#050C19;
+    --cor1:#14253D;
+    --cor2:#426280;
+    --cor3:#ACBCCC;
+    --cor4:#F3EEEB;
+    --fontesail: 'sail';
+    --fonteweather: 'weather';
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body,html{
+    background: var(--cor2) url(../imagens/plush-blankets-nautical-theme-blue-seamless-pattern-hand-drawn-maritime-elements-seamless-background.jpg.jpg);
+}
+
+header{
+    background-color: var(--cor0);
+    box-shadow: #00000071 3px 3px 3px;
+}
+
+header > h1{
+    padding: 15px;
+    text-align: center;
+    font-family: var(--fonteweather);
+    color: var(--cor4);
+    text-shadow: 1px 3px 1px rgba(255, 255, 255, 0.436);
+    font-size: 50px;
+}
+
+#burger{
+    display: block;
+    color: var(--cor3);
+    border: 2px solid #F3EEEB;
+    width: 40px;
+    text-align: center;
+    background-color: var(--cor0);
+    padding: 10px;
+    position: fixed;
+}
+
+#burger:hover{
+    background-color: var(--cor3);
+    cursor: pointer;
+    color: black;
+    display: block;
+    cursor: pointer;
+}
+
+.iconheader{
+    height: 61px;
+    width: 61px;
+    display: inline-block;
+}
+
+menu{
+    display: none;
+}
+
+menu > ul{
+    list-style-type: none;
+}
+
+menu ul > li > a{
+    display: block;
+    background-color: var(--cor1);
+    color: var(--cor3);
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: var(--cor4) solid 1px;
+    width: 45vw;
+    padding: 10px;
+    text-align: center;
+    font-weight: 500;
+}
+
+menu ul > li > a:hover{
+    background-color: var(--cor3);
+    color: var(--cor0);
+    font-weight: 500px;
+}
+
+#hbtn{
+    display: none;
+}
+
+#div1{
+    display: block;
+    background: var(--cor3) url(../imagens/fundoborrado2.png);
+    background-size: cover;
+    padding: 15px;
+    width: 80vw;
+    margin: auto;
+    margin-top: 25px;
+
+}
+
+h2{
+    text-align: center;
+    font-family: var(--fonteweather);
+    color: var(--cor3);
+    text-shadow: 1px 1px 2px rgba(4, 4, 4, 0.61);
+    font-size: 2.3em;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+p{
+    color: var(--cor4);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
+    font-size: 0.9em;
+}
+
+#divfarol {
+    display: block;
+    background: var(--cor3) url(../imagens/farol.png);
+    background-size: cover;
+    background-position: center right;
+    height: 250px;
+    padding: 15px;
+    width: 80vw;
+    margin: auto;
+    border-radius: 0px 0px 100px 100px;
+    margin-bottom: 25px;
+    box-shadow: rgba(0, 0, 0, 0.653) 0px 14px 8px 0px;
+}
+
+#div2{
+    background: var(--cor3) url(../imagens/fundoborrado.png);
+    border-radius: 10px 10px 0px 0px;
+    width: 80vw;
+    padding: 15px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bloco img{
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#stamp12{
+    background-size: cover;
+    display: flex;
+    width: 80vw;
+    padding: 15px;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+#im1{
+    background-color: white;
+    border: rgba(0, 0, 0, 0.849) dashed 2px;
+    box-shadow: #00000069 5px 3px 10px;
+    display: inline-block;
+    padding: 10px;
+    transform: rotate(342deg);
+}
+
+#im2{
+    background-color: white;
+    border: rgba(0, 0, 0, 0.849) dashed 2px;
+    box-shadow: #00000069 -15px 10px 7px;
+    display: inline-block;
+    padding: 10px;
+    transform: rotate(15deg);
+}
+
+#stamp34{
+    background-size: cover;
+    display: flex;
+    width: 80vw;
+    padding: 15px;
+    border-radius: 10px;
+    justify-content: center;
+} 
+
+#im3{
+    background-color: white;
+    border: rgba(0, 0, 0, 0.849) dashed 2px;
+    box-shadow: #00000069 -15px 10px 7px;
+    display: inline-block;
+    padding: 10px;
+    transform: rotate(5deg);
+}
+
+#im4{
+    background-color: white;
+    border: rgba(0, 0, 0, 0.849) dashed 2px;
+    box-shadow: #00000069 -15px 10px 7px;
+    display: inline-block;
+    padding: 10px;
+    transform: rotate(15deg);
+}
+
+#div3{
+    display: block;
+    background-color: var(--cor1);
+    padding: 15px;
+    width: 80vw;
+    margin: auto;
+    border-radius: 0px 0px 50px 50px;
+    margin-bottom: 25px;
+    padding-bottom: 50px;
+    box-shadow: rgba(0, 0, 0, 0.653) 0px 14px 8px 0px;
+}
+
+.botao{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--cor0);
+    font-weight: 700;
+    font-size: 1em;
+    color: var(--cor4);
+    width: 200px;
+    height: 45px;
+    display: block;
+    margin: auto;
+    margin-top: 25px;
+    border-radius: 5px;
+    box-shadow: var(--cor3) 2px 2px 5px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.botao:hover{
+    border: 1px solid rgba(255, 255, 255, 0.295);
+    transform: translate(-3px,-3px);
+    box-shadow: 5px 5px 10px var(--cor3);
+}
+
+#div4{
+  background: var(--cor3) url(../imagens/high-resolution-wood-background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    border-radius: 10px;
+    width: 80vw;
+    padding: 15px;
+    margin: auto;
+    height: auto;
+    margin-bottom: 25px;
+}
+
+#coluna1 {
+    width: 50%;
+    box-sizing: border-box; 
+    height: 300px;
+}
+
+#coluna2 {
+    width: 50%;
+    box-sizing: border-box; 
+    height: 300px;
+}
+
+#photo12{
+    display: flex;
+}
+
+#quadro1{
+    padding: 10px;
+    background-color: black;
+    box-shadow: #00000069 -15px 10px 7px;
+    height: 38vh;
+    width: 31vw;
+    margin-top: 40px;
+    margin-left: 10px;
+}
+
+#quadro2{
+    background-color: rgb(0, 0, 0);
+    box-shadow: #00000069 -15px 10px 7px;
+    padding: 7px;
+    height: 20vh;
+    width: 38vw;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+#quadro6{
+    background-color: rgb(0, 0, 0);
+    box-shadow: #00000069 -15px 10px 7px;
+    padding: 7px;
+    height: 15vh;
+    width: 38vw;
+    display: inline-block;
+}
+
+#photo34{
+    display: flex;
+}
+
+#coluna3 {
+    width: 70%;
+    box-sizing: border-box;
+}
+
+#quadro3{
+    padding: 10px;
+    background-color: black;
+    box-shadow: #00000069 -15px 10px 7px;
+    height: 61vh;
+    width: 30vw;
+    margin-top: 121px;
+}
+
+#coluna4 {
+    width: 50%;
+    box-sizing: border-box; 
+    height: 300px;
+}
+
+#quadro4{
+    padding: 10px;
+    background-color: black;
+    box-shadow: #00000069 -15px 10px 7px;
+    height: 46vh;
+    width: 30vw;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+#quadro5{
+    padding: 10px;
+    background-color: black;
+    box-shadow: #00000069 -15px 10px 7px;
+    height: 31vh;
+    width: 35vw;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+#quadro1:hover, #quadro2:hover, #quadro3:hover, #quadro4:hover, #quadro5:hover, #quadro6:hover{
+    box-shadow: 1px 1px 15px var(--cor4);
+}
+
+
+#sec4 {
+    background-color: var(--cor0);
+    background-size: cover;
+    background-attachment: fixed;
+    border-radius: 10px 10px 0px 0px;
+    padding: 15px;
+    width: 80vw;
+    margin: auto;
+    position: relative;
+    text-align: center;
+}
+
+#ocean {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#janela {
+    width: 195px;
+    height: 160px;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.janelas{
+    height: 170px;
+}
+
+#bg3{
+
+}
+
+#ocean2 {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#janela2 {
+    width: 195px;
+    height: 160px;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.row4{
+    background-color: var(--cor0);
+    background-image: url(../imagens/sky.png);
+    background-size: contain;
+    border-radius: 10px;
+    padding: 15px;
+    width: 80vw;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+video {
+    width: 100%;
+    height: auto; 
+}
+
+#sec5{
+    background: var(--cor1);
+    background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+    padding: 15px;
+    width: 80vw;
+    margin: auto;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#cap {
+    max-width: 90%;
+    height: 80%;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    background-image: url(../imagens/high-resolution-wood-background.jpg);
+    background-size: cover;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#nautical {
+    max-width: 95%;
+    height: 80%;
+    margin-bottom: 15px;
+    margin: auto;
+    display: block;
+    margin-top: 15px;
+    background-color: var(--cor2);
+    padding: 10px;
+}
+
+#sec6{
+    background-image: url(../imagens/212ea4d5439c7eb69da8a420a08d62c0.gif);
+    background-size: cover;
+    background-attachment: fixed;
+    border-radius: 10px;
+    padding: 15px;
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-bottom: 25px;
+    justify-content: center;
+}
+
+.icon{
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: var(--cor1) 2px 2px 10px;
+    margin: 5px;
+}
+
+.icon:hover{
+    box-shadow: 1px 1px 15px var(--cor4);
+}
+
+#trophys{
+    background-color: var(--cor1);
+    background-image: url(../imagens/fundoborrado2.png);
+    background-size: cover;
+    background-attachment: fixed;
+    border-radius: 10px;
+    padding: 15px;
+    width: 80vw;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#fish{
+    background-color: #050c1996;
+    max-width: 90%;
+    height: 80%;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+h3{
+    text-align: center;
+    font-family: var(--fonteweather);
+    color: var(--cor3);
+    text-shadow: 1px 1px 2px rgba(4, 4, 4, 0.61);
+    font-size: 1.5em;
+    padding: 5px;
+    margin: 15px;
+}
+
+#kraken{
+    width: 150px;
+    height:150px;
+}
+
+
+footer{
+    margin-top: 15px;
+    background-color: var(--cor0);
+    text-align: left;
+    padding: 15px;
+    box-shadow: #00000082 -1px 0px 13px 0px;;
+}
+
+footer h3{
+    font-size: 1.em;
+    text-align: center;
+    color: var(--cor2);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: black 1px 1px 2px;
+}
+
+.form{
+    width: 20;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.input{
+    background-color: var(--cor4);
+    color: var(--cor0);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.8em;
+    display: inline-block;
+    height: 15px;
+    width: 100px;
+    padding: 10px;
+    padding-left: 25px;
+    border-radius: 100px 0px 0px 100px;
+    border: 0px;
+}
+
+#subs{
+    font-family: var(--fonteweather);
+    font-size: 1.8em;
+    color: var(--cor3);
+    margin: 5px;
+    text-align: center;
+}
+
+#formbt{
+    background-color: var(--cor2);
+    color: var(--cor4);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 0.8em;
+    display: inline-block;
+    height: 36px;
+    width: 90px;
+    padding-right: 25px;
+    border-radius: 0px 100px 100px 0px;
+    border: 0px;
+}
+
+#formbt:hover {
+    box-shadow: rgb(0, 0, 0) -1px 0px 1px 1px inset;
+    text-decoration: underline;
+}
+
+
+.list{
+    display: block;
+    font-weight: bold;
+    font-size: 1.7em;
+    color: var(--cor3);
+    text-shadow: black 1px 1px 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style-position: inside;
+}
+
+.pfooter{ 
+    display: block;
+
+    font-weight: bold;
+    font-size: 1.5em;
+    color: var(--cor3);
+    text-shadow: black 1px 1px 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 8px;
+    margin-bottom: 20px;
+}
+
+.pfooter > p{
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer a{
+    display: block;
+    text-align: left;
+    text-decoration:none; 
+    color: var(--cor4);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.6em;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+footer a:hover{
+    color: var(--cor3);
+    text-decoration: underline;
+}
